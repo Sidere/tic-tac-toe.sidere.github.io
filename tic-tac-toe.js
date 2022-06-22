@@ -77,6 +77,15 @@ const tic_tac_toe = {
         }
 
         this.container_element.innerHTML = content
+    },
+    restart: function(){
+        if(this.game_is_over() || this.game_is_over){
+            this.start();
+            console.log("This game has been restarted")
+        } else if (confirm('Are you sure you want restart this game?')){
+            this.start();
+            console.log("This game has been restarted")
+        }
     }
 };
     
